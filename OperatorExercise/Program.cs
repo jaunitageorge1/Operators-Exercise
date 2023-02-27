@@ -16,6 +16,22 @@
                 Console.WriteLine($"{a}/{b} is {quotient} remainder {remainder}");
             }
 
+            AreaOfACircle();
         }
+
+        public static double AreaOfACircle()
+        {
+            Console.WriteLine("What is the radius of your circle?");
+            var radius = double.Parse(Console.ReadLine());
+
+            var result = (Math.PI * radius * radius);
+
+            Console.WriteLine($"Your result is {result}");
+
+            Console.WriteLine("We're done!");
+
+            return result;
+        }
+
     }
 }
